@@ -16,8 +16,8 @@ const Products = ({product, handleAddToCart}) => {
             <p><small>Seller: {seller}</small></p>
             <p><small>Ratings: {ratings} stars</small></p>
             </div>
-            <button className='btn-cart'>
-                <p onClick={() => handleAddToCart(product)}>Add to Cart</p>
+            <button onClick={() => handleAddToCart(product)}    className='btn-cart'>
+                <p >Add to Cart</p>
                 <FontAwesomeIcon icon={faShoppingCart} />
             </button>
         </div>

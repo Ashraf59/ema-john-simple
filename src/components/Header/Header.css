@@ -7,6 +7,9 @@
     align-items: center;
     padding-left: 112px;
     padding-right: 97px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     
     
 }
@@ -21,4 +24,18 @@ nav a{
 nav a:hover{
     color: orange;
     
+}
+.header p{
+    color: white;
+}
+.btn-logOut{
+    background-color: orangered;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.btn-logOut:hover{
+    background-color: rgb(226, 151, 11);
 }
