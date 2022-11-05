@@ -10,7 +10,7 @@ const Orders = () => {
 
     //amra konokichu delete korle cart teke delete hobe, tai amader ke cart er state jekene ace oikane oikane event handler add korte hobe kono product ke remove korar jonno.
     const handleRemoveItem = (id) =>{
-        const remaining = cart.filter(product => product.id !== id);
+        const remaining = cart.filter(product => product._id !== id);
         setCart(remaining);
         removeFromDb(id);
     }
@@ -25,7 +25,7 @@ const Orders = () => {
             <div className='order-container'>
                 {
                     cart.map(product => <ReviewItem
-                    key = {product.id}
+                    key = {product._id}
                     product = {product}
                     handleRemoveItem = {handleRemoveItem}
                     
